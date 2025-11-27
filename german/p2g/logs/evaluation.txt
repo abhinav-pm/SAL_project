@@ -1,0 +1,74 @@
+(trojen) abhinav.pm@node02:~/ABHI/SAL/v2/p2g_de$ python3 evaluate_p2g.py --model_path ./p2g_model_german_v1 --test_tsv_path /home/abhinav.pm/ABHI/SAL/v2/german_phoneme_smallset/common_voice_de_test_phoneme_cleaned.tsv --output_file german_p2g_results.csv
+======================================================================
+                  German P2G Evaluation
+======================================================================
+📋 Configuration:
+   Model: ./p2g_model_german_v1
+   Test Data: /home/abhinav.pm/ABHI/SAL/v2/german_phoneme_smallset/common_voice_de_test_phoneme_cleaned.tsv
+   Output: german_p2g_results.csv
+   Batch Size: 16
+   Num Beams: 4
+
+[1/5] Loading model and tokenizer...
+   ✓ Model loaded on: cuda
+
+[2/5] Loading German test data...
+   ✓ Loaded 9342 test samples
+
+[3/5] Running inference...
+Evaluating: 100%|█████████████████████████████████████████████████████████████████████| 584/584 [02:11<00:00,  4.43it/s]
+   ✓ Inference complete
+
+[4/5] Calculating metrics...
+
+======================================================================
+German P2G Evaluation Metrics
+======================================================================
+  Word Error Rate (WER): 0.1726 (17.26%)
+  Character Error Rate (CER): 0.0822 (8.22%)
+======================================================================
+
+[5/5] Saving results...
+
+✓ Results saved to: german_p2g_results.csv
+
+======================================================================
+Prediction Examples (Top 5)
+======================================================================
+
+[1] PHONEMES:  ʃtat ʊnt ɪnzəl zɪnt veːɡən iːrɜ tuːrɪstɪʃən raɪtsə yːbɜreːɡɪoːnɑːl bək...
+    TRUTH:     Stadt und Insel sind wegen ihrer touristischen Reize überregional bekannt.
+    PREDICTED: Stadt und Insel sind wegen ihrer touristischen Reise überregionalen bekannt.
+    -> ❌ Incorrect
+
+[2] PHONEMES:  neːbən deːm muːzeːʊm bəfɪndət zɪç diː skʊlptuːrɑːlə kɔmpoːziːtsjoːn hɔ...
+    TRUTH:     Neben dem Museum befindet sich die skulpturale Komposition „Hoffnung für die Zukunft“.
+    PREDICTED: Neben dem Museum befindet sich die spektakuläre Komposition Hoffnung für die Zukunft.
+    -> ❌ Incorrect
+
+[3] PHONEMES:  zaɪnə ɡɾoːsɛltɜn vɑːrən aʊsvandərɜ aʊs dɛɾ tyɾkaɪ...
+    TRUTH:     Seine Großeltern waren Auswanderer aus der Türkei.
+    PREDICTED: Seine Großellen waren Auswanderer aus der Türkei.
+    -> ❌ Incorrect
+
+[4] PHONEMES:  dɛɾ ɡɾɪnç nɪmt frɔødɪç an ʊnt daɾf deːn tɾɑdiːtsjoːnɛlən bɾɑːtən anʃna...
+    TRUTH:     Der Grinch nimmt freudig an und darf den traditionellen Braten anschneiden.
+    PREDICTED: Der Grün nimmt freiwillig an und darf den traditionellen Banden anschließen.
+    -> ❌ Incorrect
+
+[5] PHONEMES:  ɪn paʊlyːs reːalɛnsykloːpɛːdiː dɛɾ klasɪʃən altɜtʊmsvɪsənʃaft...
+    TRUTH:     In: "Paulys Realencyclopädie der classischen Altertumswissenschaft".
+    PREDICTED: In Paulus Realensphilosophie der klassischen Alterswissenschaft.
+    -> ❌ Incorrect
+======================================================================
+
+======================================================================
+Paper Comparison (German, 20h)
+======================================================================
+  Paper (Basic P2G):      ~30.7% WER
+  Paper (P2G + DANP):     ~29.97% WER
+  Paper (P2G + TKM):      ~28.78% WER
+  Your model:             17.26% WER
+
+  ✅ Great! Your model is performing well!
+======================================================================

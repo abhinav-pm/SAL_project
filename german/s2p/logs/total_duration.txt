@@ -1,0 +1,22 @@
+(trojen) abhinav.pm@node02:~/ABHI/SAL/v2$ python3 duration.py
+--- Loading dataset from: /scratch/ABHI/common_voice_de_190h ---
+✓ Successfully loaded 117,692 samples.
+--- Casting 'audio' column to prevent automatic decoding ---
+✓ Casting complete. Proceeding with duration calculation.
+
+--- Calculating total audio duration ---
+This may take a few minutes for a large dataset...
+Processing samples: 100%|█████████████████████████████████████████████████| 117692/117692 [00:13<00:00, 8964.51sample/s]
+
+============================================================
+                    DURATION CALCULATION COMPLETE
+============================================================
+  Dataset Path:      /scratch/ABHI/common_voice_de_190h
+  Total Samples:     117,692
+  Successfully Read: 117,692
+  Failed/Skipped:    0
+------------------------------------------------------------
+  Total Duration (Seconds): 684,961.88
+  Total Duration (Minutes): 11,416.03
+  Total Duration (Hours):   190.27
+============================================================

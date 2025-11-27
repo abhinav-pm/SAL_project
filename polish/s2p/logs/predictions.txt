@@ -1,0 +1,35 @@
+(trojen) abhinav.pm@node01:~/ABHI/SAL/v4$ python3 predict_mulitgpu.py --model_path ./s2p_model_polish_phoneme_v1 --audio_path /home/abhinav.pm/ABHI/SAL/v4/common_voice_pl_27390674.mp3
+[*] Loading model from: ./s2p_model_polish_phoneme_v1
+[*] Using device: cuda
+[*] Model and processor loaded successfully.
+
+[+] Running prediction on file: /home/abhinav.pm/ABHI/SAL/v4/common_voice_pl_27390674.mp3
+
+======================================================================
+                         INFERENCE RESULT
+======================================================================
+  Audio File: common_voice_pl_27390674.mp3
+  Predicted:  w dʑiɕɛjʃɛj dɛbatɕɛ pɔruʃɔnɔ dva vaʒnɛ tɛmatɨ
+======================================================================
+
+
+
+
+(trojen) abhinav.pm@node01:~/ABHI/SAL/v4$ python3 predict_mulitgpu.py --model_path ./s2p_model_polish_phoneme_v1 --random_test_sample
+[*] Loading model from: ./s2p_model_polish_phoneme_v1
+[*] Using device: cuda
+[*] Model and processor loaded successfully.
+
+[+] Running prediction on a random test sample...
+  - Loaded 9856 samples from test TSV.
+  - Randomly selected file: common_voice_pl_27759075.mp3
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+
+======================================================================
+                         INFERENCE RESULT
+======================================================================
+  Audio File:   common_voice_pl_27759075.mp3
+  Ground Truth: tɛmatɛm jɛst spʃɛtɕiv vɔbɛts pɔtɛmpʲaɲʲa dɛmɔnstratsji w baxrajɲʲɛ ɔras krɨtɨkɔvaɲʲa ix pʃɛbjɛɡu
+  Predicted:    tɛmatɛm jɛst spʃɛtɕifɛm vɔbɛts pɔtɛmpʲaɲʲa dɛmɔnstratsji vaxraiɲʲɛ ɔras krɨtɨkɔvaɲʲa ix pʃɛbjɛdu
+======================================================================

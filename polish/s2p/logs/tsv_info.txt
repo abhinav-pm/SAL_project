@@ -1,0 +1,70 @@
+(trojen) abhinav.pm@node01:~/ABHI/SAL/v4$ python3 tsv_file.py
+--- Loading dataset splits and exporting to TSV ---
+
+Processing 'train' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+  Loaded 24173 examples
+  ✓ Saved to: train.tsv (12.53 MB)
+  Columns: ['client_id', 'path', 'sentence', 'up_votes', 'down_votes', 'age', 'gender', 'accent', 'locale', 'segment', 'variant', 'audio_path']
+  Shape: (24173, 12)
+
+Processing 'test' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+  Loaded 9856 examples
+  ✓ Saved to: test.tsv (4.84 MB)
+  Columns: ['client_id', 'path', 'sentence', 'up_votes', 'down_votes', 'age', 'gender', 'accent', 'locale', 'segment', 'variant', 'audio_path']
+  Shape: (9856, 12)
+
+Processing 'validation' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+  Loaded 9856 examples
+  ✓ Saved to: validation.tsv (5.00 MB)
+  Columns: ['client_id', 'path', 'sentence', 'up_votes', 'down_votes', 'age', 'gender', 'accent', 'locale', 'segment', 'variant', 'audio_path']
+  Shape: (9856, 12)
+
+Processing 'other' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+  Loaded 2446 examples
+  ✓ Saved to: other.tsv (1.26 MB)
+  Columns: ['client_id', 'path', 'sentence', 'up_votes', 'down_votes', 'age', 'gender', 'accent', 'locale', 'segment', 'variant', 'audio_path']
+  Shape: (2446, 12)
+
+Processing 'invalidated' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+  Loaded 6906 examples
+  ✓ Saved to: invalidated.tsv (3.57 MB)
+  Columns: ['client_id', 'path', 'sentence', 'up_votes', 'down_votes', 'age', 'gender', 'accent', 'locale', 'segment', 'variant', 'audio_path']
+  Shape: (6906, 12)
+
+============================================================
+EXPORT COMPLETE
+============================================================
+TSV files saved to: /home/abhinav.pm/ABHI/SAL/v4/common_voice_pl_tsv_files
+
+Created files:
+  invalidated.tsv
+    Size: 3.57 MB
+    Rows: 6,906
+
+  other.tsv
+    Size: 1.26 MB
+    Rows: 2,446
+
+  test.tsv
+    Size: 4.84 MB
+    Rows: 9,856
+
+  train.tsv
+    Size: 12.53 MB
+    Rows: 24,173
+
+  validation.tsv
+    Size: 5.00 MB
+    Rows: 9,856
+
+============================================================

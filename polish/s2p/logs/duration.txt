@@ -1,0 +1,158 @@
+(trojen) abhinav.pm@node01:~/ABHI/SAL/v4$ python3 duration.py
+--- Loading all dataset splits from cache ---
+
+Attempting to load 'train' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+✓ 'train' split loaded: 24173 examples
+
+Attempting to load 'test' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+✓ 'test' split loaded: 9856 examples
+
+Attempting to load 'validation' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+✓ 'validation' split loaded: 9856 examples
+
+Attempting to load 'other' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+✓ 'other' split loaded: 2446 examples
+
+Attempting to load 'invalidated' split...
+Using the latest cached version of the dataset since fsicoli/common_voice_22_0 couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'pl' at /scratch/ABHI/huggingface_cache2/fsicoli___common_voice_22_0/pl/22.0.0/9d3b21d6c5398bd4e5196375ed1407a1b40d13bf44cb94a54675e9cd45ee4cca (last modified on Wed Nov  5 13:14:36 2025).
+✓ 'invalidated' split loaded: 6906 examples
+
+============================================================
+DATASET SPLITS SUMMARY
+============================================================
+
+--- TRAIN SPLIT ---
+Number of examples: 24173
+Calculating duration from audio files...
+  Processed 1000/24173 examples... (Valid: 1000, Invalid: 0)
+  Processed 2000/24173 examples... (Valid: 2000, Invalid: 0)
+  Processed 3000/24173 examples... (Valid: 3000, Invalid: 0)
+  Processed 4000/24173 examples... (Valid: 4000, Invalid: 0)
+  Processed 5000/24173 examples... (Valid: 5000, Invalid: 0)
+  Processed 6000/24173 examples... (Valid: 6000, Invalid: 0)
+  Processed 7000/24173 examples... (Valid: 7000, Invalid: 0)
+  Processed 8000/24173 examples... (Valid: 8000, Invalid: 0)
+  Processed 9000/24173 examples... (Valid: 9000, Invalid: 0)
+  Processed 10000/24173 examples... (Valid: 10000, Invalid: 0)
+  Processed 11000/24173 examples... (Valid: 11000, Invalid: 0)
+  Processed 12000/24173 examples... (Valid: 12000, Invalid: 0)
+  Processed 13000/24173 examples... (Valid: 13000, Invalid: 0)
+  Processed 14000/24173 examples... (Valid: 14000, Invalid: 0)
+  Processed 15000/24173 examples... (Valid: 15000, Invalid: 0)
+  Processed 16000/24173 examples... (Valid: 16000, Invalid: 0)
+  Processed 17000/24173 examples... (Valid: 17000, Invalid: 0)
+  Processed 18000/24173 examples... (Valid: 18000, Invalid: 0)
+  Processed 19000/24173 examples... (Valid: 19000, Invalid: 0)
+  Processed 20000/24173 examples... (Valid: 20000, Invalid: 0)
+  Processed 21000/24173 examples... (Valid: 21000, Invalid: 0)
+  Processed 22000/24173 examples... (Valid: 22000, Invalid: 0)
+  Processed 23000/24173 examples... (Valid: 23000, Invalid: 0)
+  Processed 24000/24173 examples... (Valid: 24000, Invalid: 0)
+
+Results:
+  Valid files processed: 24173/24173
+  Invalid/missing files: 0/24173
+
+Total duration:
+  128059.05 seconds
+  2134.32 minutes
+  35.57 hours
+
+--- TEST SPLIT ---
+Number of examples: 9856
+Calculating duration from audio files...
+  Processed 1000/9856 examples... (Valid: 1000, Invalid: 0)
+  Processed 2000/9856 examples... (Valid: 2000, Invalid: 0)
+  Processed 3000/9856 examples... (Valid: 3000, Invalid: 0)
+  Processed 4000/9856 examples... (Valid: 4000, Invalid: 0)
+  Processed 5000/9856 examples... (Valid: 5000, Invalid: 0)
+  Processed 6000/9856 examples... (Valid: 6000, Invalid: 0)
+  Processed 7000/9856 examples... (Valid: 7000, Invalid: 0)
+  Processed 8000/9856 examples... (Valid: 8000, Invalid: 0)
+  Processed 9000/9856 examples... (Valid: 9000, Invalid: 0)
+
+Results:
+  Valid files processed: 9856/9856
+  Invalid/missing files: 0/9856
+
+Total duration:
+  50633.03 seconds
+  843.88 minutes
+  14.06 hours
+
+--- VALIDATION SPLIT ---
+Number of examples: 9856
+Calculating duration from audio files...
+  Processed 1000/9856 examples... (Valid: 1000, Invalid: 0)
+  Processed 2000/9856 examples... (Valid: 2000, Invalid: 0)
+  Processed 3000/9856 examples... (Valid: 3000, Invalid: 0)
+  Processed 4000/9856 examples... (Valid: 4000, Invalid: 0)
+  Processed 5000/9856 examples... (Valid: 5000, Invalid: 0)
+  Processed 6000/9856 examples... (Valid: 6000, Invalid: 0)
+  Processed 7000/9856 examples... (Valid: 7000, Invalid: 0)
+  Processed 8000/9856 examples... (Valid: 8000, Invalid: 0)
+  Processed 9000/9856 examples... (Valid: 9000, Invalid: 0)
+
+Results:
+  Valid files processed: 9856/9856
+  Invalid/missing files: 0/9856
+
+Total duration:
+  51145.59 seconds
+  852.43 minutes
+  14.21 hours
+
+--- OTHER SPLIT ---
+Number of examples: 2446
+Calculating duration from audio files...
+  Processed 1000/2446 examples... (Valid: 1000, Invalid: 0)
+  Processed 2000/2446 examples... (Valid: 2000, Invalid: 0)
+
+Results:
+  Valid files processed: 2446/2446
+  Invalid/missing files: 0/2446
+
+Total duration:
+  13041.07 seconds
+  217.35 minutes
+  3.62 hours
+
+--- INVALIDATED SPLIT ---
+Number of examples: 6906
+Calculating duration from audio files...
+  Processed 1000/6906 examples... (Valid: 1000, Invalid: 0)
+  Processed 2000/6906 examples... (Valid: 2000, Invalid: 0)
+  Processed 3000/6906 examples... (Valid: 3000, Invalid: 0)
+  Processed 4000/6906 examples... (Valid: 4000, Invalid: 0)
+  Processed 5000/6906 examples... (Valid: 5000, Invalid: 0)
+  Processed 6000/6906 examples... (Valid: 6000, Invalid: 0)
+
+Results:
+  Valid files processed: 6906/6906
+  Invalid/missing files: 0/6906
+
+Total duration:
+  34890.57 seconds
+  581.51 minutes
+  9.69 hours
+
+============================================================
+OVERALL SUMMARY
+============================================================
+Total splits found: 5
+Total examples across all splits: 53237
+
+Total duration across all splits:
+  277769.31 seconds
+  4629.49 minutes
+  77.16 hours
+============================================================

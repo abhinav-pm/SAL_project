@@ -1,0 +1,76 @@
+(trojen) abhinav.pm@node02:~/ABHI/SAL/v4/p2g$ python3 prepare_p2g_data.py --tsv_dir /home/abhinav.pm/ABHI/SAL/v4/phonemized --cache_path /scratch/ABHI/huggingface_cache2 --create_20h_subset
+======================================================================
+                    P2G Data Analysis
+======================================================================
+
+Analyzing: common_voice_pl_train_phoneme.tsv
+  Samples: 24,173
+  Calculating duration from audio files...
+  Sampling durations: 100%|██████| 100/100 [00:00<00:00, 34284.00it/s]
+
+Analyzing: common_voice_pl_validation_phoneme.tsv
+  Samples: 9,856
+  Calculating duration from audio files...
+  Sampling durations: 100%|██████| 100/100 [00:00<00:00, 35329.38it/s]
+
+Analyzing: common_voice_pl_test_phoneme.tsv
+  Samples: 9,856
+  Calculating duration from audio files...
+  Sampling durations: 100%|██████| 100/100 [00:00<00:00, 35421.87it/s]
+
+======================================================================
+Dataset Statistics
+======================================================================
+Split           Samples      Duration (h)    Duration (m)
+──────────────────────────────────────────────────────────────────────
+Train           24173,,,,,,, N/A             N/A
+Validation      9856,,,,,,,, N/A             N/A
+Test            9856,,,,,,,, N/A             N/A
+──────────────────────────────────────────────────────────────────────
+TOTAL           43885,,,,,,, N/A             N/A
+======================================================================
+
+Example data from training set:
+
+1. Phonemes: andʒɛju kʃɨknɔwɛm ɔpasujɔnts ramjɛɲʲɛm ɡwatki ɔbwɨ...
+   Text:     — Andrzeju! — krzyknąłem, opasując ramieniem gładk...
+
+2. Phonemes: ɲʲɛ tak tɔ watfɔ
+   Text:     — Nie tak to łatwo.
+
+3. Phonemes: na prɔɡu jɛʃtʃɛ pʃɨstanɔw pɔpatʃaw i pɔʃɛd
+   Text:     Na progu jeszcze przystanął, popatrzał i poszedł.
+
+======================================================================
+Creating 20-hour training subset (matching paper's low-resource exp)
+======================================================================
+  Calculating durations from audio files...
+  Sampling: 100%|██████████████| 1000/1000 [00:00<00:00, 35028.43it/s]
+  ⚠ Warning: Could not calculate durations
+  Using approximate: 14400 samples (~5s each)
+
+  ✓ Created 20h subset:
+     Samples: 14,400
+     Duration: 20.00 hours (1200.00 minutes)
+     Saved to: /home/abhinav.pm/ABHI/SAL/v4/phonemized/common_voice_pl_train_20h_phoneme.tsv
+
+======================================================================
+✓ 20-hour subset created!
+======================================================================
+
+To train P2G with 20h data, update train_p2g.py:
+  train_tsv = os.path.join(TSV_DIR, 'common_voice_pl_train_20h_phoneme.tsv')
+
+This matches the paper's low-resource experiment (20h)!
+======================================================================
+
+======================================================================
+Recommendations
+======================================================================
+⚠ Your dataset has less than 20 hours
+  - Consider using full dataset for training
+
+Training options:
+  1. Full data (~130h):  python train_p2g.py
+  2. 20h subset:         python train_p2g.py  # after updating train_tsv path
+======================================================================

@@ -1,0 +1,76 @@
+(trojen) abhinav.pm@node02:~/ABHI/SAL/v2$ python3 split_duration_calc.py
+======================================================================
+               SPLIT DURATION CALCULATOR
+======================================================================
+
+[1/4] Loading dataset from: /scratch/ABHI/common_voice_de_190h
+   ✓ Loaded 117,692 total samples
+   ✓ Audio decoding disabled (using bytes directly)
+
+[2/4] Loading TSV files...
+   ✓ Train TSV: 25,369 files
+   ✓ Valid TSV: 9,308 files
+   ✓ Test TSV:  9,342 files
+
+[3/4] Calculating durations for each split...
+
+--- Calculating duration for TRAIN split ---
+   Target samples: 25,369
+   Processing train: 100%|███████████████████████████████████████████████| 117692/117692 [00:07<00:00, 15320.33sample/s]
+
+   TRAIN Split Summary:
+   ──────────────────────────────────────────────────
+   Samples in TSV:        25,369
+   Samples matched:       25,369
+   Successfully read:     25,369
+   Failed/Skipped:        0
+   ──────────────────────────────────────────────────
+   Duration (seconds):    147,605.86
+   Duration (minutes):    2,460.10
+   Duration (hours):      41.00
+
+--- Calculating duration for VALIDATION split ---
+   Target samples: 9,308
+   Processing validation: 100%|██████████████████████████████████████████| 117692/117692 [00:06<00:00, 19090.84sample/s]
+
+   VALIDATION Split Summary:
+   ──────────────────────────────────────────────────
+   Samples in TSV:        9,308
+   Samples matched:       9,308
+   Successfully read:     9,308
+   Failed/Skipped:        0
+   ──────────────────────────────────────────────────
+   Duration (seconds):    54,002.15
+   Duration (minutes):    900.04
+   Duration (hours):      15.00
+
+--- Calculating duration for TEST split ---
+   Target samples: 9,342
+   Processing test: 100%|████████████████████████████████████████████████| 117692/117692 [00:06<00:00, 19088.88sample/s]
+
+   TEST Split Summary:
+   ──────────────────────────────────────────────────
+   Samples in TSV:        9,342
+   Samples matched:       9,342
+   Successfully read:     9,342
+   Failed/Skipped:        0
+   ──────────────────────────────────────────────────
+   Duration (seconds):    54,003.12
+   Duration (minutes):    900.05
+   Duration (hours):      15.00
+
+======================================================================
+                    FINAL SUMMARY
+======================================================================
+
+Split           Samples      Duration (h)    Duration (m)
+──────────────────────────────────────────────────────────────────────
+Train           25,369       41.00           2460.10
+Validation      9,308        15.00           900.04
+Test            9,342        15.00           900.05
+──────────────────────────────────────────────────────────────────────
+TOTAL           44,019       71.00           4260.19
+
+======================================================================
+✓ Duration calculation complete!
+======================================================================
