@@ -1,9 +1,3 @@
-b_check_validated_overlap.py, c_extract_unique_validated.py, d_polish_clean_splits.py, e_polish_create_20h_subset.py
-
-No need to run these.. already completed (the files are in 'polish_dataset_130_and_20_tsv_splits' and 'phonimized' folders)
-
-
-
 1. DANP Sampling
 
 python3 generate_all_p2g_polish_resume.py \
