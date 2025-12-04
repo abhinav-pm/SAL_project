@@ -46,3 +46,7 @@ Follow these steps sequentially for each language. Scripts are located in the re
 1.  **Generate Noisy Data:** Use the scripts in the root of `exps/` (like `e_generate_all_p2g_data.py`) to create the augmented datasets for DANP and TKM using the trained S2P model.
 2.  **Train Advanced Models:** In the `p2g_training_exps/` subdirectory, run the training scripts for the DANP and TKM models.
 3.  **Evaluate:** Use the evaluation scripts in the same directory to get the final WER results for all advanced strategies.
+
+
+
+All files can be accessed here : https://drive.google.com/drive/folders/1kG_DWS4NfONZcBNWiZxrUJYKZhSXOrnz?usp=drive_link
