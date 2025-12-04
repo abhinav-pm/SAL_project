@@ -1,7 +1,3 @@
-# LLM-based Phoneme-to-Grapheme for ASR
-
-This project implements the paper "LLM-based phoneme-to-grapheme for phoneme-based speech recognition" for Polish and German, building a two-step ASR system.
-
 ## Project Workflow
 
 The project is structured into three main phases for each language (Polish and German):
